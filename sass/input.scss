@@ -88,8 +88,12 @@ button {
     cursor: pointer;
 }
 
-.plus-icon { 
+.plus-icon, .minus-icon { 
     margin-left: 50px; 
+}
+
+.minus-icon { 
+    display: none; // default for js 
 }
 
 h2 { 
