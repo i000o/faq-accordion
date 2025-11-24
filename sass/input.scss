@@ -79,8 +79,16 @@ ol li div {
     align-items: center;
 }
 
-.plus-icon { 
+button { 
+    border: none; 
     order: 1; 
+    margin: 0; 
+    padding: 0; 
+    background: none;
+    cursor: pointer;
+}
+
+.plus-icon { 
     margin-left: 50px; 
 }
 
@@ -95,6 +103,7 @@ p {
     opacity: 80%; 
     margin-top: 10px; 
     font-size: 1.1em; 
+    display: none; //default for js 
 
 }
 
