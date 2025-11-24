@@ -45,7 +45,12 @@ header {
   display: flex;
   flex-direction: row;
   min-width: 100%;
-  min-height: auto;
+  height: 250px;
+  background-image: url(../assets/images/background-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
 }
 
 main {
@@ -53,11 +58,14 @@ main {
   border-radius: 12px;
   max-width: 500px;
   z-index: 10;
-  padding: 10px 20px;
+  padding: 10px 30px;
   margin: 30px 20px;
-  position: fixed;
-  top: 100px;
   text-align: left;
+  margin-top: -125px;
+}
+
+.line {
+  opacity: 10%;
 }
 
 div.faqs {
@@ -78,7 +86,23 @@ h1.faqs, h2 {
 
 .star-icon {
   height: 30px;
-  padding-right: 30px;
+  padding-right: 20px;
+}
+
+ol {
+  padding: 0;
+}
+
+ol li div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plus-icon {
+  order: 1;
+  margin-left: 50px;
 }
 
 h2 {
@@ -87,7 +111,11 @@ h2 {
 }
 
 p {
-  display: none;
+  color: hsl(292, 16%, 49%);
+  line-height: 160%;
+  opacity: 80%;
+  margin-top: 10px;
+  font-size: 1.1em;
 }
 
 footer {
