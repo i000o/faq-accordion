@@ -2,7 +2,7 @@
 
 This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-# Frontend Mentor - Results summary component solution
+# Frontend Mentor - FAQ accordion solution
 
 ## Table of contents
 
@@ -25,10 +25,10 @@ My goal here is to continue with FM challenges that include basic JS, with the a
 
 ## Outcome
 
-![]()
-![]()
+![](/design/mobile-design.jpg)
+![](/design/desktop-screenshot.png)
 
-:jigsaw: [Live Site URL]()  
+:jigsaw: [Live Site URL](https://i000o.github.io/faq-accordion/)  
 :pencil2: [Solution URL]()
 
 ## Built with
@@ -56,6 +56,7 @@ My goal here is to continue with FM challenges that include basic JS, with the a
 ## Development
 
 - I don't know what `this` keyword means.
+- For my next challenge, I'd love to try Tailwind for the first time. I enjoy Sass, but am ready for a step-up.
 
 ## Useful resources
 
