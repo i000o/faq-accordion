@@ -21,7 +21,7 @@ header {
     margin: 0; 
     display: flex; 
     flex-direction: row;
-    min-width: 100%; 
+    width: 100%; 
     // min-height: auto; 
     height: 250px; 
     background-image: url(../assets/images/background-pattern-mobile.svg);
@@ -117,3 +117,27 @@ p {
 footer { 
     margin: 20px; 
 }
+
+@media screen and (min-width: 376px) { 
+
+    header { 
+        background-image: url(../assets/images/background-pattern-desktop.svg); 
+        background-size: cover;
+    }
+
+    main { 
+        min-width: 20rem;
+    }
+
+    br { 
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) { 
+    main { 
+        min-width: 40rem; 
+    }
+}
+
+// header img cuts off on 1470px width 

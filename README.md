@@ -41,6 +41,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 - `button` is an array here?
 - Found `hsl(281, 83%, 54%)` from Illustrator file SVG.
 - I think the `h2` is included in the `button` element. The whole area is clickable, not just the icon itself...
+- I had swapped out the `<header>` bg-img for a `<picture>` element, and then learnt that semantically, that doesn't make sense, so switched it back and used media queries to swap out the bg into the desktop-version and used `background-size: cover;` to make it cover the whole width of the viewport.
 
 ## Lessons
 
