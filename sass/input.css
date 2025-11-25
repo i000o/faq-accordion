@@ -139,7 +139,7 @@ footer {
 @media screen and (min-width: 376px) {
   header {
     background-image: url(../assets/images/background-pattern-desktop.svg);
-    background-size: cover;
+    background-size: contain;
   }
   main {
     min-width: 20rem;

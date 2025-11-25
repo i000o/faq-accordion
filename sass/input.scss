@@ -38,7 +38,6 @@ main {
     z-index: 10; 
     padding: 10px 30px; 
     margin: 30px 20px; 
-    // position: fixed; // this is making the scroll stop 
     text-align: left; 
     margin-top: -125px;
 }
@@ -122,7 +121,7 @@ footer {
 
     header { 
         background-image: url(../assets/images/background-pattern-desktop.svg); 
-        background-size: cover;
+        background-size: contain;
     }
 
     main { 
@@ -139,5 +138,3 @@ footer {
         min-width: 40rem; 
     }
 }
-
-// header img cuts off on 1470px width 

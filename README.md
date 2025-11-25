@@ -17,7 +17,11 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 
 ## Overview
 
+This challenge uses a common front-end pattern, the accordion and some minimal JS to update dynamic content.
+
 ## Goal
+
+My goal here is to continue with FM challenges that include basic JS, with the ambition to bridge the gap between my foundational knowledge and that required for a full-stack challenge.
 
 ## Outcome
 
@@ -42,6 +46,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 - Found `hsl(281, 83%, 54%)` from Illustrator file SVG.
 - I think the `h2` is included in the `button` element. The whole area is clickable, not just the icon itself...
 - I had swapped out the `<header>` bg-img for a `<picture>` element, and then learnt that semantically, that doesn't make sense, so switched it back and used media queries to swap out the bg into the desktop-version and used `background-size: cover;` to make it cover the whole width of the viewport.
+- I could not get the JS to work on my own! AI suggested alternative methods, but I feel this technique should work and after debugging attemptes, cannot figure out why it's not. Hoping the community on FM can help me.
 
 ## Lessons
 
@@ -51,7 +56,6 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 ## Development
 
 - I don't know what `this` keyword means.
--
 
 ## Useful resources
 
