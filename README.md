@@ -11,7 +11,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 - [Outcome](#outcome)
 - [Process](#process)
 - [Built with](#built-with)
-- [Lessons](#lessons)
+- [Feedback](#feedback)
 - [Development](#development)
 - [Useful resources](#useful-resources)
 
@@ -29,7 +29,7 @@ My goal here is to continue with FM challenges that include basic JS, with the a
 ![](/design/desktop-screenshot.png)
 
 :jigsaw: [Live Site URL](https://i000o.github.io/faq-accordion/)  
-:pencil2: [Solution URL]()
+:pencil2: [Solution URL](https://www.frontendmentor.io/solutions/faq-accordion-with-js-collapsible-uBGpFZ4JfN)
 
 ## Built with
 
@@ -48,15 +48,23 @@ My goal here is to continue with FM challenges that include basic JS, with the a
 - I had swapped out the `<header>` bg-img for a `<picture>` element, and then learnt that semantically, that doesn't make sense, so switched it back and used media queries to swap out the bg into the desktop-version and used `background-size: cover;` to make it cover the whole width of the viewport.
 - I could not get the JS to work on my own! AI suggested alternative methods, but I feel this technique should work and after debugging attemptes, cannot figure out why it's not. Hoping the community on FM can help me.
 
-## Lessons
+## Feedback
 
-1. JS - `console.log(this.parentElement.nextSiblingElement)` returned `cannot read properties of undefined nextSiblingElement`.
-2. JS - `console.log(this.parentElement)` returned `undefined`.
+After sharing this solution with other devs (with the bug), I noticed that junior devs couldn't really help me. They suggested other ways to achieve the same thing, but couldn't tell me why this way wasn't working if all seemed theoretically fine. I sent an email to a more experienced developer and they were able to give me a prompt, precise explanation for why this wasn't working and suggested a simple way to fix it with clear explanations; **It was a scope issue. I was asking JS to find variables globally that were locally scoped within a callback function, so the JS was never executed.** I understand now that:
+
+1. JS will execute global script first, so in this instance, my `console.log()` statements referenced nothing that existed gloablly, so this threw an 'Uncaught Error' and interrupted the whole script from running.
+2. I know that if you place the `<script>` inside `<head>`, it will execute before any of the `HTML` is parsed. That means that oftentimes, without a `DOMContentLoaded` method, your script will run and try to reference your HTML before it's loaded, so you need to pay attention to this. It's different if `<script>` is at the bottom of the `HTML` doc.
+
+Once I simply changed these `console.log()` statements placement in the document, everything worked fine. I find that sometimes the trickiest bugs have the simplest solutions and usually expose some area of your understanding where you are overlooking some fundamentals. It's really important to me that my foundational knowledge as a programmer is robust, because I know these are the principles I will rely on constantly as I go.
+
+Another thing to note, AI couldn't detect this! - It would only suggest me other techniques to use to rewrite the code block, say using the `.closest` method. But I knew this way _should_ work, and there should be an explanation as to why - It couldn't deliver. I don't want to rely on AI to think for me while I code. I want to understand well what it is I am doing.
 
 ## Development
 
 - I don't know what `this` keyword means.
 - For my next challenge, I'd love to try Tailwind for the first time. I enjoy Sass, but am ready for a step-up.
+- I need to pay attention to scope more and understand why a couple of `console.log()` statements in the wrong place can cause an entire script not to execute.
+- Rely on your own research more than AI! Don't use it as a crutch, although it's tempting.
 
 ## Useful resources
 
