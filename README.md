@@ -65,6 +65,8 @@ Another thing to note, AI couldn't detect this! - It would only suggest me other
 - For my next challenge, I'd love to try Tailwind for the first time. I enjoy Sass, but am ready for a step-up.
 - I need to pay attention to scope more and understand why a couple of `console.log()` statements in the wrong place can cause an entire script not to execute.
 - Rely on your own research more than AI! Don't use it as a crutch, although it's tempting.
+- I wasn't able to make the `h2` clickable as the button is. I didn't know the best way to go about this without disrupting my initial design which worked well. I'd like to gain confidence here and be sure to include this in a commit later on.
+- I'd like to be able to use the CSS `transition` property. I've used it briefly in the past, but wasn't able to get it to work here. Again, my understanding of theses and animations is very limited and it's certainly an area I can build on later. For now, I'm focused on establishing strong programming fundamentals, but I think these touches can really elevate designs.
 
 ## Useful resources
 
