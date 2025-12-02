@@ -46,7 +46,7 @@ main {
     opacity: 10%; 
 }
 
-div.faqs { 
+.card-heading { 
     display: flex; 
     flex-direction: row;
     justify-content: flex-start;
@@ -87,8 +87,6 @@ button {
     cursor: pointer;
 }
 
-// active & hover states 
-
 .minus-icon { 
     display: none; // default for js 
 }
@@ -110,12 +108,13 @@ p {
     margin-top: 10px; 
     font-size: 1.1em; 
     display: none; //default for js 
-
 }
 
 footer { 
     margin: 20px; 
 }
+
+// add transition for collapsibles 
 
 @media screen and (min-width: 376px) { 
 
@@ -134,7 +133,9 @@ footer {
 }
 
 @media screen and (min-width: 700px) { 
+
     main { 
         min-width: 40rem; 
+        max-width: 40rem; 
     }
 }

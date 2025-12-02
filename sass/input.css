@@ -68,7 +68,7 @@ main {
   opacity: 10%;
 }
 
-div.faqs {
+.card-heading {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -151,5 +151,6 @@ footer {
 @media screen and (min-width: 700px) {
   main {
     min-width: 40rem;
+    max-width: 40rem;
   }
 }/*# sourceMappingURL=input.css.map */
